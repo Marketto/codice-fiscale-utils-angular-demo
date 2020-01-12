@@ -28,10 +28,10 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatorio </span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatorio </span>
               <span *ngSwitchCase = "'minlength'">deve essere di {{error.value.requiredLength}} caratteri </span>
-              <span *ngSwitchCase = "'invalidFormat'">non Ã¨ formalmente valido </span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchCase = "'invalidFormat'">non &egrave; formalmente valido </span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error">
@@ -68,10 +68,10 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatorio </span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatorio </span>
               <span *ngSwitchCase = "'minlength'">deve essere di {{error.value.requiredLength}} caratteri </span>
-              <span *ngSwitchCase = "'invalidFormat'">non Ã¨ formalmente valido </span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchCase = "'invalidFormat'">non &egrave; formalmente valido </span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error" *ngIf="cfFormGroup.errors?.cfLastNameMismatch">
@@ -96,10 +96,10 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatorio </span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatorio </span>
               <span *ngSwitchCase = "'minlength'">deve essere di {{error.value.requiredLength}} caratteri </span>
-              <span *ngSwitchCase = "'invalidFormat'">non Ã¨ formalmente valido </span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchCase = "'invalidFormat'">non &egrave; formalmente valido </span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error" *ngIf="cfFormGroup.errors?.cfFirstNameMismatch">
@@ -128,11 +128,11 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatoria </span>
-              <span *ngSwitchCase = "'matDatepickerParse'">non Ã¨ formalmente valida </span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatoria </span>
+              <span *ngSwitchCase = "'matDatepickerParse'">non &egrave; formalmente valida </span>
               <span *ngSwitchCase = "'matDatepickerMin'"> non puÃ² essere precedente al {{error.value.min | date}}</span>
               <span *ngSwitchCase = "'matDatepickerMax'"> deve essere precedente ad oggi</span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error">
@@ -172,8 +172,8 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatorio </span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatorio </span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error" *ngIf="cfFormGroup.errors?.cfGenderMismatch">
@@ -223,11 +223,11 @@
                   <span *ngSwitchCase="true"> e </span>
                 </span>
               </span>
-              <span *ngSwitchCase = "'required'">Ã¨ obbligatorio </span>
-              <span *ngSwitchCase = "'nonexistent'">Ã¨ inesistente</span>
+              <span *ngSwitchCase = "'required'">&egrave; obbligatorio </span>
+              <span *ngSwitchCase = "'nonexistent'">&egrave; inesistente</span>
               <span *ngSwitchCase = "'scopeNonexistent'">non corrisponde ad una possibile scelta per l'area selezionata</span>
               <span *ngSwitchCase = "'minlength'">deve essere di almeno due caratteri</span>
-              <span *ngSwitchDefault>Ã¨ {{ error.key }}</span>
+              <span *ngSwitchDefault>&egrave; {{ error.key }}</span>
             </span>
           </mat-error>
           <mat-hint class="mat-error">
