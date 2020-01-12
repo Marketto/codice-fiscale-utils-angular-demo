@@ -8,7 +8,7 @@ import { FormControl, Validators, FormGroup } from "@angular/forms";
 import { Observable } from "rxjs";
 import { map, startWith } from "rxjs/operators";
 import CfValidators from "./validators/cf-vaidators";
-import moment from "moment";
+import * as moment from "moment";
 
 @Component({
   selector: "app-root",

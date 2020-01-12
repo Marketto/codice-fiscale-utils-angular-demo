@@ -1,6 +1,11 @@
 {
   "apps": [
     {
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "src",
       "outDir": "dist",
       "assets": ["assets", "favicon.ico"],
@@ -8,7 +13,10 @@
       "main": "main.ts",
       "polyfills": "polyfills.ts",
       "prefix": "app",
-      "styles": ["styles.scss"],
+      "styles": [
+        "styles.scss",
+        "../node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css"
+      ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
