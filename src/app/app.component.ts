@@ -21,7 +21,10 @@ export class AppComponent implements OnInit {
       codiceFiscale: new FormControl("", [
         Validators.required,
         Validators.minLength(16),
-        CfValidators.codiceFiscale.format
+        CfValidators.codiceFiscale.format,
+        CfValidators.autoFill.cfAutoFillBirthDate("birthDate"),
+        CfValidators.autoFill.cfAutoFillGender("gender"),
+        CfValidators.autoFill.cfAutoFillAreaPlace("area", "place")
       ]),
       lastName: new FormControl("", [
         Validators.required,
