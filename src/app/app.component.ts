@@ -59,6 +59,7 @@ export class AppComponent implements OnInit {
       ])
     },
     {
+      updateOn: "blur",
       validators: [
         CfValidators.group.birthDatePlaceMismatch("birthDate", "place"),
         CfValidators.group.cfLastNameMismatch("codiceFiscale", "lastName"),
@@ -66,7 +67,7 @@ export class AppComponent implements OnInit {
         CfValidators.group.cfBirthDateMismatch("codiceFiscale", "birthDate"),
         CfValidators.group.cfGenderMismatch("codiceFiscale", "gender"),
         CfValidators.group.cfBirthPlaceMismatch("codiceFiscale", "place")
-      ]
+      ],
     }
   );
 
