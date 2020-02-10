@@ -193,7 +193,7 @@
             [matAutocomplete]="autoArea"
           >
           <mat-autocomplete #autoArea="matAutocomplete" autoActiveFirstOption [displayWith]="displayArea">
-            <mat-option *ngFor="let area of filteredAreas | async" [value]="area">
+            <mat-option *ngFor="let area of filteredAreas | async" [value]="displayArea(area)">
               {{displayArea(area)}}
             </mat-option>
           </mat-autocomplete>

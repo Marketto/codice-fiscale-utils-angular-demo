@@ -136,7 +136,7 @@ export class AppComponent implements OnInit {
   public displayArea(area: string | symbol): string {
     if (typeof area === "string") {
       return area;
-    } else if (area === CfValidators.constant.COUNTRIES) {
+    } else if ([CfValidators.constant.COUNTRIES, this.FOREGIN_COUNTRIES_LABEL].includes(area)) {
       return this.FOREGIN_COUNTRIES_LABEL;
     }
     return;
